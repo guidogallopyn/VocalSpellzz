@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,7 +9,7 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
     <style type="text/css">
       /* large desktop */
@@ -39,14 +38,22 @@
       }
       
       /* all form factors */
-
       /* main body and headings */
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        font-family: 'Tangerine', Helvetica, Arial, sans-serif;
         text-align: center;
+      }
+      .heading h1 {
+        font-size: 96px;
+        line-height: 102px;
+      }
+      .subheading p {
+        padding-top: 1.5%;
+        font-size: 36px;
+        line-height: 42px;
       }
       p.lead {
         padding-top: 1.5%;
@@ -80,6 +87,11 @@
         padding-bottom:2.5%;
         text-align: justify;
       }
+      .copy h3 {
+        font-family: 'Tangerine', Helvetica, Arial, sans-serif;
+        font-size: 48px;
+        text-align: left;
+      }
       .asset {
         padding: 2.5% 0%;
       }
@@ -93,7 +105,22 @@
       .footer a {
         color: #ccccff;
       }   
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+        width:180px;
+        margin: 0 auto;
+      }
     </style>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42932918-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
 
   <body>
@@ -125,18 +152,19 @@
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">A cloud based service for spoken magic spells in online gaming.</p>
+          <p>A cloud based service for vocal magic spells in online gaming.</p>
         </div>
       </div>
     </div>
     <div class="row-fluid pitch">
       <div class="span5 offset1 video">
-         <img class="img-polaroid" src="http://placehold.it/480x300">
+         <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
       </div> 
       <!-- actions div for statistics, order and share buttons -->
       <div class="span5 actions">
+        <div class="row-fluid">
         <div class="span8 offset2">
-          <div class="statistics">
+          <div class="row-fluid statistics">
             <div class="span4"> 
               <div class="linediv-l">
                 <h3>0</h3><p>backers</p>
@@ -154,6 +182,7 @@
             </div>
           </div>  
         </div> 
+        <div class="row-fluid">
         <div class="span10 offset1">
           <!-- Bootstrap progress bar -->
           <div class="thermometer progress active">
@@ -161,15 +190,28 @@
             <div class="bar bar-warning" style="width: 100%;"></div>
           </div>
         </div>
+        </div>
+        <div class="row-fluid">
         <div class="span6 offset3 order">
           <!-- Standard bootstrap button for ordering --> 
           <button class="btn btn-success btn-large">Preorder</button>
         </div>
+        </div>
+        <div class="row-fluid">
         <div class="span8 offset2 social">
-          <!-- Social buttons, not included in bootstrap  -->
-          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	  <!-- AddThis Button BEGIN -->
+	  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+	    <a class="addthis_button_preferred_1"></a>
+	    <a class="addthis_button_preferred_2"></a>
+	    <a class="addthis_button_compact"></a>
+	    <a class="addthis_counter addthis_bubble_style"></a>
+	  </div>
+	  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd70567953984e"></script>
+	  <!-- AddThis Button END -->
+        </div>
         </div>           
+      </div>
       </div>       
     </div>
     <!--  Beyond this point is the marketing section -->
@@ -177,22 +219,22 @@
       <div class="span5 offset1 copy copy-right">
          <h3>Gamers: cast powerfull spoken magic spells</h3>
          <p>
-            In a VocalSpellzz empowerd game, spellcasting characters go to Magic School to learn how to cast spells with their voice and body motions. In the heat of the battle, Vocalspellzz gives you the power to cast powerfull magic spells by voice. With your backing more games will adopt VocalSpellzz, and as a reward you will receive an exclusive magic spell only available to VocalSpellzz backers in your VocalSpellzz enabled game of choice.       
+In a VocalSpellzz empowered game, spellcasting characters first go to Magic School to learn the ancient art of spell casting by using the power of you voice. In the heat of the battle, Vocalspellzz gives you the power to cast powerfull magic spells by voice by using the microphone you use for online gaming. With your liking and backing, more games will adopt VocalSpellzz, and as a reward you will receive an exclusive magic spell, only available to VocalSpellzz backers, when your game of choice enables VocalSpellzz.       
          </p>
       </div>
       <div class="span5 asset">
-        <img class="img-polaroid" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vg_icon.svg/500px-Vg_icon.svg.png">
+        <img class="img-polaroid" alt="Gamer-logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vg_icon.svg/500px-Vg_icon.svg.png">
       </div>
     </div>  
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
-         <h3>Game Developers: add VocalSpellzz to your game</h3> 
+         <h3>Game Developers: improve gameplay and gain an innovative edge</h3> 
          <p>
-           The VocalSpellzz web-service makes it easy to empower your game with VocalSpellz technology. Audio with the spoken spell cast is streamed to the cloud where the intended spell is recognized and the spoken spell is returned to your game with an indication of strength. In addition there is a wizard apprentice service that allows you to teach your gamers how to cast vocal spells. And of course, the VocalSpellzz service allows complete cusomizartions to the magic spells used in your game. Sign-up to help fund the development of this innovative new gaming technology and receive discounts to use this service.
+The VocalSpellzz web-service makes it easy to empower your game with VocalSpellz technology. Audio with the spoken spell cast is streamed to the VocalSpellzz cloud where the intended spell is recognized and returned to your game with an indication of strength.In addition VocalSpellz has a wizard apprentice service that teaches gamers how to cast spoken spells. Of course, the VocalSpellzz service allows complete customization to the magic spells used in your game and the language used by magic characters in your game. Sign-up to help fund the development of this innovative new gaming technology and receive discounts when VocalSpellz is in service.
          </p>
       </div>
       <div class="span5 asset">
-        <img class="img-polaroid" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vg_development_icon.svg/500px-Vg_development_icon.svg.png">
+        <img class="img-polaroid" alt="Game-developer-logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vg_development_icon.svg/500px-Vg_development_icon.svg.png">
       </div> 
     </div>
     <!-- FAQ accordion using jquery.js and bootstrap.js  -->
@@ -257,5 +299,13 @@
          <p>This work is lcensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.</p> 
       </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42932918-2', 'vocalspellzz.com');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
